@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdicionarProdutoActivity">
+
+    <!-- Imagem no topo -->
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:contentDescription="@string/logo"
+        android:scaleType="fitCenter"
+        android:src="@drawable/imglogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Texto "ADICIONAR PRODUTO" -->
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:gravity="center"
+        android:text="@string/adicionar_produto"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/imageLogo"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="84dp" />
+
+    <!-- Campos de entrada para adicionar produto -->
+
+    <TextView
+        android:id="@+id/textNomeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="58dp"
+        android:text="@string/nome"
+        app:layout_constraintTop_toTopOf="@+id/textTitle"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-1dp" />
+
+    <EditText
+        android:id="@+id/editNome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/nome_do_produto"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="#546E7A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textNomeLabel"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textPrecoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/preco"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editNome" />
+
+    <EditText
+        android:id="@+id/editPreco"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/preco_do_produto"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textColorHint="#546E7A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textPrecoLabel"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textQuantidadeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/quantidade"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editPreco" />
+
+    <EditText
+        android:id="@+id/editQuantidade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/quantidade_do_produto"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColorHint="#546E7A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textQuantidadeLabel"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <!-- Botão de Confirmar -->
+    <Button
+        android:id="@+id/btnConfirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/confirmar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editQuantidade" />
+
+
+    <!-- Botão Voltar -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

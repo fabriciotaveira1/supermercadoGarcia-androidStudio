@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">SupermercadoGarcia</string>
+    <string name="btnEntrar">Entrar</string>
+    <string name="bem_vindo">Seja Bem-Vindo</string>
+    <string name="add_produto">Adicionar Produto</string>
+    <string name="rem_produto">Remover Produto</string>
+    <string name="att_produto">Atualizar Produto</string>
+    <string name="list_produtos">Listar Produtos</string>
+    <string name="voltar">Voltar</string>
+    <string name="adicionar_produto">ADICIONAR PRODUTO</string>
+    <string name="atulizar_produto">ATUALIZAR PRODUTO</string>
+    <string name="listar_produtos">LISTAR PRODUTOS</string>
+    <string name="remover_produto">REMOVER PRODUTO</string>
+    <string name="nome">Nome:</string>
+    <string name="nome_do_produto">Nome do Produto</string>
+    <string name="preco">Preço:</string>
+    <string name="preco_do_produto">Preço do Produto</string>
+    <string name="quantidade">Quantidade:</string>
+    <string name="quantidade_do_produto">Quantidade do Produto</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="codigo">Código:</string>
+    <string name="codigo_do_produto">Codigo do Produto</string>
+    <string name="proximo">Proximo</string>
+    <string name="anterior">Anterior</string>
+    <string name="logo">logo</string>
+</resources>

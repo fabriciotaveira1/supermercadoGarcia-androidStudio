@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <!-- Imagem no topo -->
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/imglogo"
+        android:contentDescription="@string/logo"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Texto "Seja Bem Vindo" -->
+    <TextView
+        android:id="@+id/textWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bem_vindo"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imageLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"/>
+
+    <!-- Botão Adicionar Produto -->
+    <Button
+        android:id="@+id/btnAddProduct"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/add_produto"
+        app:layout_constraintTop_toBottomOf="@id/textWelcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        app:layout_constraintWidth_percent="0.8"/>
+
+    <!-- Botão Remover Produto -->
+    <Button
+        android:id="@+id/btnRemoveProduct"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/rem_produto"
+        app:layout_constraintTop_toBottomOf="@id/btnAddProduct"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintWidth_percent="0.8"/>
+
+    <!-- Botão Atualizar Produto -->
+    <Button
+        android:id="@+id/btnUpdateProduct"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/att_produto"
+        app:layout_constraintTop_toBottomOf="@id/btnRemoveProduct"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintWidth_percent="0.8"/>
+
+    <!-- Botão Listar Produtos -->
+    <Button
+        android:id="@+id/btnListProducts"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/list_produtos"
+        app:layout_constraintTop_toBottomOf="@id/btnUpdateProduct"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintWidth_percent="0.8"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
