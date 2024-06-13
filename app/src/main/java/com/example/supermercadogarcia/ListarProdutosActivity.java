@@ -2,6 +2,8 @@ package com.example.supermercadogarcia;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -14,6 +16,8 @@ public class ListarProdutosActivity extends AppCompatActivity {
     private LinearLayout tabelaProdutos;
     private DatabaseHelper dbHelper;
 
+    private Button btnBack;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +25,15 @@ public class ListarProdutosActivity extends AppCompatActivity {
 
         dbHelper = new DatabaseHelper(this);
         tabelaProdutos = findViewById(R.id.tabelaProdutos);
+        btnBack = findViewById(R.id.btnBack);
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
 
         listarProdutos();
     }
